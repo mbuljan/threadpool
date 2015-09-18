@@ -12,7 +12,6 @@ void hello(void* arg)
 {
   int* x = (int*) arg;
   cout << "Hello " << *x << endl;
-//  cout << "\n";
 }
 
 int main(int argc, char* argv[])

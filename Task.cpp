@@ -7,7 +7,8 @@ Task::~Task() {
 }
 
 void Task::operator()() {
-  (*m_fn_ptr)(m_arg);
+  // (*m_fn_ptr)(m_arg);
+  run(); // we can reuse run() here instead of copying the code from run
   if (m_arg != NULL) {
     delete m_arg;
   }
